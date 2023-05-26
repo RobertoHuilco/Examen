@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cmyk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.13.5/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+
+    <div class="divider" ></div>
+
+    <div class="max-w-2xl mx-auto rounded-lg shadow-2xl border-4">
+        <p class="text-center uppercase font-bold my-4">Registro del <span class="text-primary">Vendedor</span></p>
+        <div class="rounded-lg shadow-2xl border-4 grid grid-cols m-4 p-4 gap-4">
+            <p>Cédula:</p>
+            <input class="input input-primary" type="text" id="vendedor_dni">
+            <p>Nombre Completo:</p>
+            <input class="input input-primary" type="text" id="vendedor_fullname">
+            <p>Seccion de la población:</p>
+            <select id="vendedor_area" class="input input-primary" >
+            </select>
+            <p>Celular:</p>
+            <input class="input input-primary" type="text" id="vendedor_celular">
+            <button class="btn btn-primary" onclick="addVendedor()">Guardar</button>
+         </div>
+    </div>
+    <div class="max-w-2xl mx-auto rounded-lg shadow-2xl border-4">
+        <p class="text-center uppercase font-bold my-4">Registro del <span class="text-primary">Cliente</span></p>
+        <div class="rounded-lg shadow-2xl border-4 grid grid-cols m-4 p-4 gap-4">
+            <p>Cédula:</p>
+            <input class="input input-primary" type="text" id="cliente_dni">
+            <p>Nombre Completo:</p>
+            <input class="input input-primary" type="text" id="cliente_fullname">
+            <p>Dirección:</p>
+            <input class="input input-primary" type="text" id="cliente_direccion">
+            <p>Edad:</p>
+            <input class="input input-primary" type="text" id="cliente_edad">
+            <button class="btn btn-primary" onclick="addClient()">Guardar</button>
+         </div>
+    </div>
+
+    
+
+
+    <script>let exports = {};</script>
+    <script src="built/main.js"></script>
+</body>
+</html>
